@@ -18,8 +18,7 @@ int strongPasswordChecker(char* s) {
   if(passSize>20)
   changes += (passSize - 20);
 
-  //Check for needed characters
-
+  //Check for missing requirements
   for(int i = 0; i < passSize; i++){
     printf("Current character is %c \n", s[i]);
     if(isupper(s[i])){
@@ -36,6 +35,8 @@ int strongPasswordChecker(char* s) {
                                                 needsUpperCase,
                                                 needsLowerCase,
                                                 needsNumber);
+
+
   //Add necessary changes
   changes += needsUpperCase += needsLowerCase += needsNumber;
 
@@ -43,6 +44,20 @@ int strongPasswordChecker(char* s) {
   printf("The password requires %d changes. \n",changes);
   return changes;
 
+}
+
+
+int checkRepeatedChars(char* s){
+  int size = strlen(s);
+  int neededChanges = 0;
+  char prev;
+  char current;
+
+  for(int i=0; i < size; i++){
+    //Check for repeated characters
+  }
+
+  return neededChanges;
 }
 
 int main(){

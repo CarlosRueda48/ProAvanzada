@@ -13,3 +13,6 @@ Insertion, deletion or replace of any one character are all considered as one ch
 Para comenzar, se me ocurrió verificar los primeros aspectos, el tamaño de la contraseña. Dependiendo del tamaño del string, se utiliza una variable para ir agregando el número de cambios que se necesitarán en caso de ocuparse.
 
 Para verificar que hay por lo menos una letra minúscula, una mayúscula y un número se me ocurrió utilizar flags que inician "prendidas" con el valor en 1, después se itera por el string buscando cada uno de estos elementos, si se encuentra por lo menos uno se "apaga" el flag, cambiando el valor a 0. Al finalizar la iteración se suman estos flags a la variable de cambios, cada una de las flags prendidas sumarán un cambio necesario a la variable.
+
+
+Para checar lo último, los caracteres repetidos, se me ocurre utilizar un contador de 'repetidos', además de variables que guarden caracteres, el anterior y el actual para poder compararlos.
