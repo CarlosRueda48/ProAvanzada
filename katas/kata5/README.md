@@ -1,6 +1,4 @@
 # Infographic
-Validate if a given string is numeric.
-
 
 ## Definition
 Think about capitalized words. For example, look at these sentences:
